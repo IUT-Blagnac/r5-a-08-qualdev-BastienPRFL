@@ -7,7 +7,6 @@ Ce dépôt concerne les rendus de mailto:bastien.perruffel@etu.univ-tlse2.fr[Bas
 == TP1
 
 .Fichier is_it_friday_yet.feature
-[source,gherkin]
 ---
 Feature: Is it Friday yet?
   Everybody wants to know when it's Friday
