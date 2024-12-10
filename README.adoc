@@ -7,7 +7,8 @@ Ce dépôt concerne les rendus de mailto:bastien.perruffel@etu.univ-tlse2.fr[Bas
 == TP1
 
 .Fichier is_it_friday_yet.feature
----
+
+```
 Feature: Is it Friday yet?
   Everybody wants to know when it's Friday
 
@@ -21,7 +22,7 @@ Feature: Is it Friday yet?
         | Friday         | TGIF   |
         | Sunday         | Nope   |
         | anything else! | Nope   |
----
+```
 
 .Trace d'exécution des tests
 image::assets/Screen9.png[width=80%]
