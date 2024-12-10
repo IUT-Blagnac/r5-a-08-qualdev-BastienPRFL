@@ -11,14 +11,9 @@ public class StepDefinitions {
     String result;
     String day;
 
-    @Given("today is Sunday")
-    public void today_is_sunday() {
-        day = "sunday";
-    }
-
-    @Given("today is Friday")
-    public void today_is_friday() {
-        day = "friday";
+    @Given("today is {string}")
+    public void today_is(String today) {
+        day = today;
     }
 
     @When("I ask whether it's Friday yet")
@@ -30,7 +25,6 @@ public class StepDefinitions {
     public void i_should_be_told(String string) {
         assertEquals(string, result);
     }
-
 
 
     @Given("an example scenario")
@@ -50,6 +44,6 @@ public class StepDefinitions {
 class IsItFriday {
     
     static String isItFriday(String today) {
-        return "friday".equals(today) ? "TGIF" : "Nope";
+        return "Friday".equals(today) ? "TGIF" : "Nope";
     }
 }
